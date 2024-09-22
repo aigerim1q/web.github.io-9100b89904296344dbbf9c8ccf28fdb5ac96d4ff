@@ -1,130 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BookMovies</title>
     <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/bootstrap.css">
+
 </head>
-<body class="body" style="background-color: #000;">
+
+<body class="bg-dark text-light">
     <div class="wrapper">
-        <header class="container">
-            <span class="logo">BookMovies</span>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="active"><a href="movie.html">Movies</a></li>
-                    <li><a href="books.html">Books</a></li>
-                    <li class="btn"><a href="signin.html">Sign In</a></li>
-                </ul>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-2 " href="#">BOOKMOVIES</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+                            <li class="nav-item px-5">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link active" href="movie.html">Movies</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="books.html">Books</a>
+                            </li>
+                            <li class="nav-itempx-5">
+                                <a class="nav-link" href="signin.html">Sign In</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button  class="btn btn-outline-success text-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
-        </header> 
-        <div class="container-movie">
-            <h1>Movies</h1>
+        </header>
+
+
+        
+        <!-- Movies Section -->
+        <div class="container-movie text-center px-5 text-light">
+            <h1 class="text-black display-1 fw-bolder px-5">Movies</h1>
         </div>
-        <div class="movie-nav">
-            <div class="nav-left"><nav>
-                <ul>
-                    <li><a href="#">Top Movies</a></li>
-                    <li><a href="#">Series</a></li>
-                    <li><a href="#">Genres</a></li>
-                    <li><a href="#">Best in World</a></li>
-                </ul></nav>
-            </div>
-            <div class="nav-right">
-                <nav>
-                    <ul><input type="text" placeholder="Search Movies..."></ul>
-                </nav>
-            </div>
-        </div>
-        <div class="moviecards1">
-            <figure class="block"> 
-                <img src="https://m.media-amazon.com/images/M/MV5BYzM2NGMzNGQtZjNhMi00MTVkLTg2ZGQtN2M4OTllYzU1Y2Y0XkEyXkFqcGc@._V1_.jpg" alt="It Ends With Us">
-                <figcaption>It Ends With Us</figcaption>
-            </figure>
-
-            <figure class="block"> 
-                <img src="https://upload.wikimedia.org/wikipedia/ru/b/bf/%D0%9E%D0%BF%D0%BF%D0%B5%D0%BD%D0%B3%D0%B5%D0%B9%D0%BC%D0%B5%D1%80_%D1%84%D0%B8%D0%BB%D1%8C%D0%BC_%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80.jpg" alt="OppenHeimer">
-                <figcaption>OppenHeimer</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg" alt="Avengers">
-                <figcaption>Avengers</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" alt="Parasites">
-                <figcaption>Parasites</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://markdecosemo.com/wp-content/uploads/2022/01/image.png?w=693" alt="Dune">
-                <figcaption>Dune</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbxL1Ja_i6SMoeOqFMOdZe-0KEE5kGFwA8Vg&s" alt="Ocean's 8">
-                <figcaption>Ocean's 8</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://upload.wikimedia.org/wikipedia/ru/f/ff/Descendants_of_the_Sun.jpg" alt="Descendants of the Sun">
-                <figcaption>Descendants of the Sun</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/600x900" alt="1+1">
-                <figcaption>1+1</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://lumiere-a.akamaihd.net/v1/images/p_disneyplusoriginals_elemental_poster_rebrand_a0788af2.jpeg" alt="Elemental">
-                <figcaption>Elemental</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNdbzljKdFzwghR3NIAPIE-I95Xcn4iuTNsQ&s" alt="Pixels">
-                <figcaption>Pixels</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/M/MV5BNzEzYjhkYTctMWNmZS00MTc5LWI4OWUtZjFkNzNkYTNkMTJlXkEyXkFqcGc@._V1_.jpg" alt="Demon Slayer">
-                <figcaption>Demon Slayer</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://kinocensor.ru/cache/videos/78/fcb0e920ed44b9d3ae610ea8e6a568b4-367x550.jpg" alt="Game of Thrones">
-                <figcaption>Game of Thrones</figcaption>
-            </figure>
-        </div>
-        <footer>
-            <div class="container">
-                <div>
-                    <span class="logo">BookMovies</span>
-                    <p>Your guide to the world of literature and cinema.</p>
-                </div>
-                <div>
-                    <h4>About us</h4>
-                    <ul>
-                        <li>Portfolio</li>
-                        <li>Reviews</li>
-                        <li>Books</li>
-                        <li>Movies</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact us</h4>
-                    <p>Astana, Kazakhstan</p>
-                    <p>+77076103761</p>
+        <div class="container-fluid py-4">
+            <div class="row mb-1">
+                <div class="col-12">
+                    <nav class="d-flex bg-dark p-2">
+                        <div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Top Movies</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Series</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Genres</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Best in World</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <hr>
-            <p class="center">Made by Oshakbay Aigerim and Orynbay Aisana SE-2304</p>
-        </footer>
-        <footer>Orynbayeva Aisana</footer>
-    </div>
-</body>
+
+            <section class="container-fluid bg-black text-light py-5">
+                <div class="row g-5">
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYzM2NGMzNGQtZjNhMi00MTVkLTg2ZGQtN2M4OTllYzU1Y2Y0XkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="It Ends With Us">
+                            <div class="card-body">
+                                <h5 class="card-title">It Ends With Us</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://upload.wikimedia.org/wikipedia/ru/b/bf/%D0%9E%D0%BF%D0%BF%D0%B5%D0%BD%D0%B3%D0%B5%D0%B9%D0%BC%D0%B5%D1%80_%D1%84%D0%B8%D0%BB%D1%8C%D0%BC_%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80.jpg" class="card-img-top" alt="OppenHeimer">
+                            <div class="card-body">
+                                <h5 class="card-title">OppenHeimer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg" class="card-img-top" alt="Avengers">
+                            <div class="card-body">
+                                <h5 class="card-title">Avengers</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" class="card-img-top" alt="Parasites">
+                            <div class="card-body">
+                                <h5 class="card-title">Parasites</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://markdecosemo.com/wp-content/uploads/2022/01/image.png?w=693" class="card-img-top" alt="Dune">
+                            <div class="card-body">
+                                <h5 class="card-title">Dune</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://media.glamour.com/photos/5a32be70968b09301d8d1d6e/master/w_1600%2Cc_limit/OCNS8_VERT_TSR_DOM_2764x4096_master-rev-1.jpg" class="card-img-top" alt="Ocean's 8">
+                            <div class="card-body">
+                                <h5 class="card-title">Ocean's 8</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/M/MV5BM2ExNGE4ZjItMmY5My00ZDU5LWJiMzMtOTFjMDRmNWVlMzZiXkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_.jpg" class="card-img-top" alt="Descendants of the Sun">
+                            <div class="card-body">
+                                <h5 class="card-title">Descendants of the Sun</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/600x900" class="card-img-top" alt="1+1">
+                            <div class="card-body">
+                                <h5 class="card-title">1+1</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNjU2MjE1OGItZjdmYS00ZmIyLTljNjYtOWI5ZGRkZjM4NDEwXkEyXkFqcGc@._V1_.jpg" class="card-img-top" alt="Elemental">
+                            <div class="card-body">
+                                <h5 class="card-title">Elemental</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTIzNDYzMzgtZWMzNS00ODc2LTg2ZmMtOTE2MWZkNzIxMmQ0XkEyXkFqcGdeQXVyNjQ3MDg0MTY@._V1_FMjpg_UX1000_.jpg" class="card-img-top" alt="Pixels">
+                            <div class="card-body">
+                                <h5 class="card-title">Pixels</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=480,height=720/catalog/crunchyroll/765ee047befcfb677d169f5de4c82d5c.jpg" class="card-img-top" alt="Demon Slayer">
+                            <div class="card-body">
+                                <h5 class="card-title">Demon Slayer</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://kinocensor.ru/cache/videos/78/fcb0e920ed44b9d3ae610ea8e6a568b4-367x550.jpg" class="card-img-top" alt="Game of Thrones">
+                            <div class="card-body">
+                                <h5 class="card-title">Game of Thrones</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-grey text-light py-5">
+                <div class="container d-flex justify-content-between">
+                    <div>
+                        <span class="logo fs-4">BOOKMOVIES</span>
+                        <p>Your guide to the world of literature and cinema.</p>
+                    </div>
+                    <div>
+                        <h4>About Us</h4>
+                        <ul class="list-unstyled">
+                            <li>Portfolio</li>
+                            <li>Reviews</li>
+                            <li>Books</li>
+                            <li>Movies</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact Us</h4>
+                        <p>Astana, Kazakhstan</p>
+                        <p>+77076103761</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">Made by Oshakbay Aigerim and Orynbayaeva Aisana SE-2304</p>
+            </footer>
+        </div>
+    </body>
+
 </html>

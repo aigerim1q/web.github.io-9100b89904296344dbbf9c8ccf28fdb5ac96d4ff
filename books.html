@@ -1,119 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BookMovies</title>
     <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/bootstrap.css">
+
 </head>
-<body class="body">
+
+<body class="bg-dark text-light">
     <div class="wrapper">
-        <header class="container">
-            <span class="logo">BookMovies</span>
-            <nav>
-                <ul>
-                    <li ><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="movie.html">Movies</a></li>
-                    <li class="active"><a href="books.html">Books</a></li>
-                    <li class="btn"><a href="signin.html">Sign In</a></li>
-                </ul>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-2 " href="#">BOOKMOVIES</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+                            <li class="nav-item px-5">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link " href="movie.html">Movies</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link active" href="books.html">Books</a>
+                            </li>
+                            <li class="nav-itempx-5">
+                                <a class="nav-link" href="signin.html">Sign In</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button  class="btn btn-outline-success text-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
-        </header> 
+        </header>
 
-        <div class="container-books">
-            <h1>Books</h1>
+
+        
+        <div class="container-books text-center px-5 text-light">
+            <h1 class=" display-1 fw-bolder px-5 text-light">Books</h1>
         </div>
-
-        <div class="bookcards1">
-            <figure class="block"> 
-                <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" alt="Atomic Habits">
-                <figcaption>Atomic Habits</figcaption>
-            </figure>
-
-            <figure class="block"> 
-                <img src="https://m.media-amazon.com/images/I/71-dG4XzFiL._AC_UY327_FMwebp_QL65_.jpg" alt="The Women">
-                <figcaption>The Women</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://cgassets-1d48b.kxcdn.com/site/assets/files/431781/getimage.jpg" alt="The Midnight Library">
-                <figcaption>The Midnight Library</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://cdn.britannica.com/04/126004-050-EC4DF54F/Dustcover-Louisa-May-Alcott-Little-Women-novel.jpg" alt="Little Women">
-                <figcaption>Little Women</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://assets-prd.ignimgs.com/2023/05/03/hp-deathly-hallows-1683157182524.jpeg" alt="Harry Potter">
-                <figcaption>Harry Potter</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://assets-prd.ignimgs.com/2023/05/03/the-da-vinci-code-1683158091059.jpeg" alt="Da Vinci Code">
-                <figcaption>Da Vinci Code</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/I/61W0SpJahUL._AC_UF1000,1000_QL80_.jpg" alt="Blackberry Winter">
-                <figcaption>Blackberry Winter</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://images.penguinrandomhouse.com/cover/9781984898968" alt="The Guide">
-                <figcaption>The Guide</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/I/51fcXmG6g9L._SY780_.jpg" alt="The Secret Messenger">
-                <figcaption>The Secret Messenger</figcaption>
-            </figure>
-            
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/I/71wXZB-VtBL._SY466_.jpg" alt="War and Peace">
-                <figcaption>War and Peace</figcaption>
-            </figure>
-
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/I/81NLDvyAHrL._AC_UY327_FMwebp_QL65_.jpg" alt="Pride and Prejudice">
-                <figcaption>Pride and Prejudice</figcaption>
-            </figure>
-            
-            <figure class="block">
-                <img src="https://m.media-amazon.com/images/I/711iLkqXpVL._AC_UY327_FMwebp_QL65_.jpg" alt="alice adventures in wonderland">
-                <figcaption>Alice adventures in wonderland</figcaption>
-            </figure>
-
-        </div>
-
-        <footer>
-            <div class="container">
-                <div>
-                    <span class="logo">BookMovies</span>
-                    <p>Your guide to the world of literature and cinema.</p>
-                </div>
-                <div>
-                    <h4>About us</h4>
-                    <ul>
-                        <li>Portfolio</li>
-                        <li>Reviews</li>
-                        <li>Books</li>
-                        <li>Movies</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact us</h4>
-                    <p>Astana, Kazakhstan</p>
-                    <p>+77076103761</p>
+        <div class="container-fluid py-4">
+            <div class="row mb-1">
+                <div class="col-12">
+                    <nav class="d-flex bg-dark p-2">
+                        <div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Top Movies</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Series</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Genres</a></li>
+                                <li class="nav-item"><a class="nav-link text-light" href="#">Best in World</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
-            <hr>
-            <p class="center">Made by Oshakbay Aigerim and Orynbay Aisana SE-2304</p>
-        </footer>
-        <footer>Orynbay Aisana</footer>
-    </div>
-</body>
+
+            <section class="container-fluid bg-black text-light py-5">
+                <div class="row g-5">
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://storage.googleapis.com/du-prd/books/images/9780735211292.jpg" class="card-img-top" alt="Atomic Habbits">
+                            <div class="card-body">
+                                <h5 class="card-title">Atomic Habbits</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/I/71-dG4XzFiL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="The Women">
+                            <div class="card-body">
+                                <h5 class="card-title">The Women</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://cgassets-1d48b.kxcdn.com/site/assets/files/431781/getimage.jpg" class="card-img-top"  alt="The Midnight Library">
+                            <div class="card-body">
+                                <h5 class="card-title">The Midnight Library</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://cdn.britannica.com/04/126004-050-EC4DF54F/Dustcover-Louisa-May-Alcott-Little-Women-novel.jpg"  class="card-img-top" alt="Little Women">
+                            <div class="card-body">
+                                <h5 class="card-title">Little Women</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://assets-prd.ignimgs.com/2023/05/03/hp-deathly-hallows-1683157182524.jpeg" class="card-img-top" alt="Harry Potter">
+                            <div class="card-body">
+                                <h5 class="card-title">Harry Potter</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://assets-prd.ignimgs.com/2023/05/03/the-da-vinci-code-1683158091059.jpeg" class="card-img-top" alt="Da Vinci Code">
+                            <div class="card-body">
+                                <h5 class="card-title">Da Vinci Code</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/I/61W0SpJahUL._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="Blackberry Winter">
+                            <div class="card-body">
+                                <h5 class="card-title">Blackberry Winter</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://images.penguinrandomhouse.com/cover/9781984898968"  class="card-img-top" alt="The Guide">
+                            <div class="card-body">
+                                <h5 class="card-title">The Guide</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/I/51fcXmG6g9L._SY780_.jpg" class="card-img-top" alt="The Secret Messenger">
+                            <div class="card-body">
+                                <h5 class="card-title">The Secret Messenger</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/I/71wXZB-VtBL._SY466_.jpg" class="card-img-top" alt="War and Peace">
+                            <div class="card-body">
+                                <h5 class="card-title">War and Peace</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/I/81NLDvyAHrL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="Pride and Prejudice">
+                            <div class="card-body">
+                                <h5 class="card-title">Pride and Prejudice</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-light h-100 hover-shadow">
+                            <img src="https://m.media-amazon.com/images/I/711iLkqXpVL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="Alice adventures in wonderland">
+                            <div class="card-body">
+                                <h5 class="card-title">Alice adventures in wonderland</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="bg-grey text-light py-5">
+                <div class="container d-flex justify-content-between">
+                    <div>
+                        <span class="logo fs-4">BOOKMOVIES</span>
+                        <p>Your guide to the world of literature and cinema.</p>
+                    </div>
+                    <div>
+                        <h4>About Us</h4>
+                        <ul class="list-unstyled">
+                            <li>Portfolio</li>
+                            <li>Reviews</li>
+                            <li>Books</li>
+                            <li>Movies</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contact Us</h4>
+                        <p>Astana, Kazakhstan</p>
+                        <p>+77076103761</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center">Made by Oshakbay Aigerim and Orynbayaeva Aisana SE-2304</p>
+            </footer>
+        </div>
+    </body>
+
 </html>

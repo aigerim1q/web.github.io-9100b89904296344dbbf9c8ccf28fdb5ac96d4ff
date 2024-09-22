@@ -6,51 +6,83 @@
     <title>Registration</title>
     <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="static/styles/bootstrap.css">
+
+
 </head>
 <body>
     <div class="wrapper">
-        <header class="container">
-            <span class="logo">BookMovies</span>
-            <nav>
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="movie.html">Movies</a></li>
-                    <li><a href="books.html">Books</a></li>
-                    <li class="btn"><a href="signin.html">Sign In</a></li>
-                </ul>
+        <header class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-black w-100">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder fs-2 " href="#">BOOKMOVIES</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
+                            <li class="nav-item px-5">
+                                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="movie.html">Movies</a>
+                            </li>
+                            <li class="nav-item px-5">
+                                <a class="nav-link" href="books.html">Books</a>
+                            </li>
+                            <li class="nav-itempx-5 active">
+                                <a class="nav-link" href="signin.html">Sign In</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button  class="btn btn-outline-success text-light" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
             </nav>
         </header> 
 
-        <div class="signin">
-            <h1>Register</h1>
-            <form action="#" method="post">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-
-                <button type="submit">Register</button>
-            </form>
-            <p class="login-link">Already have an account? <a href="#">Sign In</a></p>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h1 class="text-center mb-4 text-light">Register</h1>
+                    <form action="#" method="post" class="p-4 border rounded bg-light">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-Mail</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                        </div>
+                        <button type="submit" class="btn  w-100">Register</button>
+                    </form>
+                    <p class="text-center mt-3 text-light">Already have an account? <a href="signin.html">Sign In</a></p>
+                </div>
+            </div>
         </div>
 
-        <footer>
-            <div class="container">
+        <footer class="bg-grey text-light py-5">
+            <div class="container d-flex justify-content-between">
                 <div>
-                    <span class="logo">BookMovies</span>
+                    <span class="logo fs-4">BOOKMOVIES</span>
                     <p>Your guide to the world of literature and cinema.</p>
                 </div>
                 <div>
-                    <h4>About us</h4>
-                    <ul>
+                    <h4>About Us</h4>
+                    <ul class="list-unstyled">
                         <li>Portfolio</li>
                         <li>Reviews</li>
                         <li>Books</li>
@@ -58,15 +90,14 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Contact us</h4>
+                    <h4>Contact Us</h4>
                     <p>Astana, Kazakhstan</p>
                     <p>+77076103761</p>
                 </div>
             </div>
             <hr>
-            <p class="center">Made by Oshakbay Aigerim and Orynbay Aisana SE-2304</p>
+            <p class="text-center">Made by Aigerim </p>
         </footer>
-        <footer>Oshakbay Aigerim</footer>
     </div>
 </body>
 </html>
